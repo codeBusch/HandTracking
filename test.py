@@ -70,7 +70,7 @@ while True:
         volBar = np.interp(length, [20, 180], [400, 150])
         volPer = np.interp(length, [20, 180], [0, 100])
         print(int(length),vol)
-        volume.SetMasterVolumeLevel(-0.1,None)
+        volume.SetMasterVolumeLevel(vol,None)
 
         if length < 20:
             cv2.circle(img, (cx, cy), 15, (0, 255, 0), cv2.FILLED)
