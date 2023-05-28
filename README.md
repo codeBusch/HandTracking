@@ -1,7 +1,13 @@
 # HandTracking
 En
+
+
 This project is a computer vision application that uses hand tracking to adjust the computer sound. It was developed as part of a computer vision lecture.
+
+
 Tr
+
+
 Bu proje, bilgisayar sesini ayarlamak için el takibi kullanarak bir bilgisayarlı görüntüleme uygulamasıdır. Bu proje, bilgisayarlı görme dersi kapsamında geliştirilmiştir.
 Proje kodlarının ve amacının detaylı açıklamayı sunuda bulabilirsiniz.
 [Bilgisayarlı Görme Proje Ödevi.pptx](https://github.com/codeBusch/HandTracking/files/11585441/Bilgisayarli.Gorme.Proje.Odevi.pptx)
