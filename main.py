@@ -39,11 +39,10 @@ volBar = 400
 volPer = 0
 #print(volume.GetVolumeRange())  #Volume range hesaplamak için
 
-
 while True:
     success,img =cap.read()
     img = detector.findHands(img)
-    lmList = detector.findPosition(img, draw=False) #Eğer el tespit etmezse kapatır. Todo düzelt
+    lmList = detector.findPosition(img, draw=False) 
     
     if len(lmList) != 0:
         #elimizin hangi bölgeleri arasından volume belirlemek istiyorsak (ben 4 .ve 8. bölgeyi seçtim baş ve işaret parmak uçları) mediapipe kütüphanesini inceleyerek el bölgelerine bakabilirsiniz.
@@ -69,7 +68,7 @@ while True:
         vol = np.interp(length, [20, 180], [minVol, maxVol])
         volBar = np.interp(length, [20, 180], [400, 150])
         volPer = np.interp(length, [20, 180], [0, 100])
-        print(int(length),vol)
+        #print(int(length),vol)
         volume.SetMasterVolumeLevel(vol,None)
 
         if length < 20:

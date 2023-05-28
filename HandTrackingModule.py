@@ -63,7 +63,6 @@ class handDetector():
                 cv2.rectangle(img, (bbox[0] - 20, bbox[1] - 20),
             (bbox[2] + 20, bbox[3] + 20), (0, 255, 0), 2)
             
-            #return self.lmList, bbox
             return self.lmList
         else:
             return [] #El algılanmazsa program kendini kapatmasın.
@@ -106,8 +105,8 @@ def main():
         success, img = cap.read()
         img = detector.findHands(img)
         lmList = detector.findPosition(img)
-        if len(lmList) != 0:
-            print(lmList[4])
+        #if len(lmList) != 0:
+            #print(lmList[4])
     
     cTime = time.time()
     fps = 1 / (cTime - pTime)
